@@ -21,10 +21,12 @@
                 <p class="mt-1 text-sm">{{ $post->excerpt }}</p>
 
                 <div class="w-full flex justify-end">
-                    <button type="submit" class="btnDelete mt-3 text-red-500" onclick="deletePost($post->id)">Hapus</button>
+                    <button type="submit" class="btnDelete mt-3 text-red-500" onclick="deletePost({{ $post->id }})">Hapus</button>
                 </div>
             </div>
         @endforeach
     </div>
+
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PostController::class, 'index']);
+Route::delete('/post/{post:id}', [PostController::class, 'destroy']);
